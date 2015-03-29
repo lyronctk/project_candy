@@ -7,7 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header>
+  <div class="container">
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",   root_path %></li>
+        <li><%= link_to "About Us",   static_pages_about_path %></li>
+        <li><%= link_to "Gallery",   static_pages_gallery_path %></li>
+        <li><%= link_to "Order Now",  orders_new_path %></li>
+        <li><%= link_to "Contact Us",   static_pages_contact_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 <%= yield %>
 
 </body>

@@ -1,0 +1,41 @@
+[33mcommit 23fe13cff1b7eb6ba6f0702fa4daf2e166fb68c3[m
+Author: Lyron <lyronctk@gmail.com>
+Date:   Sun Mar 22 03:54:53 2015 +0000
+
+    Show Brother
+
+[33mcommit 6528d41bd2a31e54145b5a8513492848ef9000dd[m
+Author: Lyron <lyronctk@gmail.com>
+Date:   Tue Mar 17 03:23:34 2015 +0000
+
+    Working Scaffolding, other is broken
+
+[33mcommit 6e7c1d8bed32414196947b5a564fa05d540b6119[m
+Author: Lyron <lyronctk@gmail.com>
+Date:   Tue Mar 17 02:23:04 2015 +0000
+
+    Scaffolding Default
+
+[33mcommit 93817e266254c725fccde176990fb4e454451bb2[m
+Author: Lyron <lyronctk@gmail.com>
+Date:   Tue Feb 10 03:28:37 2015 +0000
+
+    Added static_pages
+
+[33mcommit 111ba759573e41a0c7fe4a9acf466e10629f24ff[m
+Author: Lyron <lyronctk@gmail.com>
+Date:   Tue Feb 10 03:21:05 2015 +0000
+
+    Added Naviagtion bar
+
+[33mcommit 8fa8787109014488d0462305da143e79f2bea48e[m
+Author: Lyron <lyronctk@gmail.com>
+Date:   Mon Feb 9 21:02:50 2015 +0000
+
+    Updated Gemfile for heroku
+
+[33mcommit 832714e6f28ae8df51397c2805ddb77a21fd5dc7[m
+Author: Lyron <lyronctk@gmail.com>
+Date:   Sun Feb 1 22:09:48 2015 +0000
+
+    Initialize Repository

@@ -1,0 +1,44 @@
+<form action="/orders" class="new_order" id="new_order" method="post">
+
+<h1>Order Now!</h1>
+
+<p></p>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@order) do |f| %>
+      
+    
+      <%= f.label :FirstName %>
+    <p>
+      <%= f.text_field :nameFirst %>
+    </p>
+    
+    
+      <%= f.label :LastName %>
+    <p>
+      <%= f.text_field :nameLast %>
+    </p>
+    
+    
+      <%= f.label :email %>
+    <p>
+      <%= f.email_field :email %>
+    </p>
+    
+    
+      <%= f.label :address %>
+    <p>
+      <%= f.text_field :address %>
+    </p>
+      
+    
+      <%= f.label :phone %>
+    <p>
+      <%= f.number_field :phone %>
+    </p>
+      
+      <%= f.submit "Order", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

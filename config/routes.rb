@@ -8,6 +8,14 @@ Rails.application.routes.draw do
   get 'static_pages/order'
 
   get 'static_pages/contact'
+  
+  get 'orders/index'
+  
+  get 'orders/new'
+  
+  get 'orders/complete'
+  
+  resources :orders
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
