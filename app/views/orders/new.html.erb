@@ -27,17 +27,45 @@
     </p>
     
     
-      <%= f.label :address %>
+      <%= f.label :address1 %>
     <p>
       <%= f.text_field :address %>
     </p>
       
+       <%= f.label :address2 %>
+    <p>
+      <%= f.text_field :addressLine2 %>
+    </p>
+    
+     <%= f.label :address3 %>
+    <p>
+      <%= f.text_field :addressLine3 %>
+    </p>
     
       <%= f.label :phone %>
     <p>
-      <%= f.number_field :phone %>
+      <%= f.text_field :phone %>
     </p>
       
+      <%= f.label :alternatePhone %>
+    <p>
+      <%= f.text_field :alternatePhone %>
+    </p>
+    
+    <%= f.label :city %>
+    <p>
+      <%= f.text_field :city %>
+    </p>
+    
+    <%= f.label :state %>
+    <p>
+      <%= f.text_field :state %>
+    </p>
+    
+    <%= f.label :zipCode %>
+    <p>
+      <%= f.text_field :zipCode %>
+    </p>
       <%= f.submit "Order", class: "btn btn-primary" %>
     <% end %>
   </div>
