@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   
   get 'orders/new'
   
+  get 'orders/show'
+  
   get 'orders/complete'
   
   resources :orders

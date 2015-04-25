@@ -3,68 +3,69 @@
 <h1>Order Now!</h1>
 
 <p></p>
+<p></p>
+<p>*Required Fields</p>
 
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <%= form_for(@order) do |f| %>
       
     
-      <%= f.label :FirstName %>
+      <%= f.label :nameFirst, "*First Name" %>
     <p>
-      <%= f.text_field :nameFirst %>
+      <%= f.text_field :nameFirst, :required => true %>
+    </p>
+    
+       <%= f.label :nameLast, "*Last Name" %>
+    <p>
+      <%= f.text_field :nameLast, :required => true %>
     </p>
     
     
-      <%= f.label :LastName %>
+       <%= f.label :email, "*Email" %>
     <p>
-      <%= f.text_field :nameLast %>
+      <%= f.email_field :email, :required => true %>
     </p>
     
     
-      <%= f.label :email %>
+      <%= f.label :address, "*Address" %>
     <p>
-      <%= f.email_field :email %>
-    </p>
-    
-    
-      <%= f.label :address1 %>
-    <p>
-      <%= f.text_field :address %>
+      <%= f.text_field :address, :required => true %>
     </p>
       
-       <%= f.label :address2 %>
+       <%= f.label :addressLine2, "Address Line 2" %>
     <p>
       <%= f.text_field :addressLine2 %>
     </p>
     
-     <%= f.label :address3 %>
+     <%= f.label :addressLine3, "Address Line 3" %>
     <p>
       <%= f.text_field :addressLine3 %>
     </p>
     
-      <%= f.label :phone %>
+      <%= f.label :phone, "*Phone" %>
     <p>
-      <%= f.text_field :phone %>
+      <%= f.text_field :phone, :required => true %>
     </p>
       
-      <%= f.label :alternatePhone %>
+      <%= f.label :alternatePhonephone, "Alternate Phone" %>
     <p>
       <%= f.text_field :alternatePhone %>
     </p>
     
-    <%= f.label :city %>
+    <%= f.label :city, "*City" %>
     <p>
-      <%= f.text_field :city %>
+      <%= f.text_field :city, :required => true %>
     </p>
     
-    <%= f.label :state %>
+    <%= f.label :state, "*State" %>
     <p>
-      <%= f.text_field :state %>
+      <%= f.text_field :state, :required => true %>
     </p>
     
-    <%= f.label :zipCode %>
+    <%= f.label :zipCode, "*Zip Code" %>
     <p>
-      <%= f.text_field :zipCode %>
+      <%= f.text_field :zipCode, :required => true %>
     </p>
       <%= f.submit "Order", class: "btn btn-primary" %>
     <% end %>

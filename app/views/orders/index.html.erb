@@ -1,61 +1,10 @@
-
-<h1>All Orders</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>         </th>
-      <th>Last Name</th>
-      <th>         </th>
-      <th>Email</th>
-      <th>     </th>
-      <th>Phone</th>
-      <th>     </th>
-      <th>Alternate Phone</th>
-      <th>     </th>
-      <th>Address1</th>
-      <th>     </th>
-      <th>Address2</th>
-      <th>     </th>
-      <th>Address3</th>
-      <th>     </th>
-      <th>City</th>
-      <th>     </th>
-      <th>State</th>
-      <th>     </th>
-      <th>Zip Code</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-  
+<ul class="orders">
   <% @order.each do |order| %>
-      <tr>
-          <td><%= order.nameFirst %></td>
-          <td>___</td>
-          <td><%= order.nameLast %></td>
-          <td>___</td>
-          <td><%= order.email %></td>
-          <td>___</td>
-          <td><%= order.phone %></td>
-          <td>___</td>
-          <td><%= order.alternatePhone %></td>
-          <td>___</td>
-          <td><%= order.address %></td>
-          <td>___</td>
-          <td><%= order.addressLine2 %></td>
-          <td>___</td>
-          <td><%= order.addressLine3 %></td>
-          <td>___</td>
-          <td><%= order.city %></td>
-          <td>___</td>
-          <td><%= order.state %></td>
-          <td>___</td>
-          <td><%= order.zipCode %></td>
-          
-          <%= link_to "Delete", order, method: :delete,
+    <li>
+      <%= link_to order.nameFirst, order %>
+      <%= " | " %>
+      <%= link_to "delete", order, method: :delete,
                                   data: { confirm: "You sure?" } %>
-          </td>
-      </tr>
+    </li>
   <% end %>
-</table>
+</ul>
