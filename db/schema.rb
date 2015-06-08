@@ -11,22 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150330024528) do
+ActiveRecord::Schema.define(version: 20150423034433) do
 
   create_table "orders", force: :cascade do |t|
     t.string   "nameFirst"
     t.string   "nameLast"
     t.string   "email"
     t.string   "address"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-    t.integer  "alternatePhone"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.integer  "phone",                 limit: 11
+    t.integer  "alternatePhone",        limit: 11
     t.string   "addressLine2"
     t.string   "addressLine3"
     t.string   "city"
     t.string   "state"
-    t.integer  "zipCode"
-    t.integer  "phone"
+    t.integer  "zipCode",               limit: 5
+    t.string   "stripe_customer_token"
   end
 
 end

@@ -8,6 +8,8 @@ gem 'coffee-rails',         '4.1.0'
 gem 'jquery-rails',         '4.0.3'
 gem 'turbolinks',           '2.3.0'
 gem 'jbuilder',             '2.2.3'
+gem 'stripe'
+gem 'stripe_event'
 gem 'sdoc',                 '0.4.0', group: :doc
 
 group :development, :test do
