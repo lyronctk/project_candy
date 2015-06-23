@@ -1,4 +1,8 @@
 class OrdersController < ApplicationController
+
+  def home
+  end
+
   def new
     @order = Order.new
   end
