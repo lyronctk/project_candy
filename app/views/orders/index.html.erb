@@ -1,10 +1,24 @@
 <ul class="orders">
+
+  <br></br>
+  <br></br>  
+
   <% @order.each do |order| %>
     <li>
       <%= link_to order.nameFirst, order %>
-      <%= " | " %>
-      <%= link_to "delete", order, method: :delete,
-                                  data: { confirm: "You sure?" } %>
+       | <%= link_to "delete", order, method: :delete, confirm: "You sure?" %>
     </li>
   <% end %>
+
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+  <br></br>
+
 </ul>

@@ -25,7 +25,9 @@ class OrdersController < ApplicationController
   end
   
   def destroy
+    puts 'GOT TO DESTROY '
     Order.find(params[:id]).destroy
+    flash[:success] = "Order deleted"
     redirect_to orders_url
   end
   
