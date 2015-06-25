@@ -1,19 +1,18 @@
 <ul class="orders">
 
+<h1>Listing Orders</h1>
+
   <br></br>
   <br></br>  
 
-  <% @order.each do |order| %>
+  <% @orders.each do |order| %>
     <li>
       <%= link_to order.nameFirst, order %>
-       | <%= link_to "delete", order, method: :delete, confirm: "You sure?" %>
+      |
+       <%= link_to 'Delete', order, method: :delete, data: { confirm: 'Are you sure?' } %>
     </li>
   <% end %>
 
-  <br></br>
-  <br></br>
-  <br></br>
-  <br></br>
   <br></br>
   <br></br>
   <br></br>

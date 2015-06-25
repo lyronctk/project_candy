@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :create_orders
+
   root 'orders#home'
 
   get 'orders/index'

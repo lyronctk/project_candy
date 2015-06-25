@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
   end
   
   def index
-    @order = Order.all
+    @orders = Order.all
   end
   
   def show
@@ -25,10 +25,11 @@ class OrdersController < ApplicationController
   end
   
   def destroy
-    puts 'GOT TO DESTROY '
     Order.find(params[:id]).destroy
-    flash[:success] = "Order deleted"
-    redirect_to orders_url
+    respond_to do |format|
+      format.html { redirect_to orders_url, notice: 'Order was successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end
   
   private
